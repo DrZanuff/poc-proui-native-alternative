@@ -1,0 +1,564 @@
+{
+	"name": "E_NativeUIBehavior",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "MODAL_LAYER",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 764142034794625
+		},
+		{
+			"eventType": "variable",
+			"name": "MODAL_LAYER_NAME",
+			"type": "string",
+			"initialValue": "\"Modal\"",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 253655815138967
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "ButtonNative",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "STATUS_IDLE",
+					"type": "string",
+					"initialValue": "\"Idle\"",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": true,
+					"sid": 969314224337055
+				},
+				{
+					"eventType": "variable",
+					"name": "STATUS_HOVER",
+					"type": "string",
+					"initialValue": "\"Hover\"",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": true,
+					"sid": 345920065956164
+				},
+				{
+					"eventType": "variable",
+					"name": "STATUS_PRESSED",
+					"type": "string",
+					"initialValue": "\"Pressed\"",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": true,
+					"sid": 246742968837388
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 334532804865717,
+							"parameters": {
+								"object": "ButtonBehavior"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 200494918937642
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "ButtonBehavior",
+							"sid": 996404939709671,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "STATUS_HOVER",
+								"property": "scale",
+								"end-x": "1.09",
+								"end-y": "1.09",
+								"time": "0.2",
+								"ease": "easeinoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "ButtonBehavior",
+							"sid": 938049994322238,
+							"parameters": {
+								"instance-variable": "InternalState",
+								"value": "STATUS_HOVER"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "ButtonBehavior",
+							"sid": 147461596286076,
+							"parameters": {
+								"effect": "\"AdjustHSL\"",
+								"parameter-index": "2",
+								"value": "95"
+							}
+						},
+						{
+							"id": "set-cursor-style2",
+							"objectClass": "Mouse",
+							"sid": 965160097183031,
+							"parameters": {
+								"cursor-style": "pointer"
+							}
+						}
+					],
+					"sid": 245922239112065
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 828764021165589,
+							"parameters": {
+								"object": "ButtonBehavior"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "ButtonBehavior",
+							"sid": 939550822055323,
+							"parameters": {
+								"instance-variable": "InternalState",
+								"comparison": 0,
+								"value": "STATUS_HOVER"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 384563002690371
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "ButtonBehavior",
+							"sid": 971383893154204,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "STATUS_IDLE",
+								"property": "scale",
+								"end-x": "1",
+								"end-y": "1",
+								"time": "0.2",
+								"ease": "easeinoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "ButtonBehavior",
+							"sid": 444811191544809,
+							"parameters": {
+								"animation": "STATUS_IDLE",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "ButtonBehavior",
+							"sid": 791058656782191,
+							"parameters": {
+								"instance-variable": "InternalState",
+								"value": "STATUS_IDLE"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "ButtonBehavior",
+							"sid": 391700285717707,
+							"parameters": {
+								"effect": "\"AdjustHSL\"",
+								"parameter-index": "2",
+								"value": "100"
+							}
+						},
+						{
+							"id": "set-cursor-style2",
+							"objectClass": "Mouse",
+							"sid": 724543190607674,
+							"parameters": {
+								"cursor-style": "normal"
+							}
+						}
+					],
+					"sid": 650283128384862
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "mouse-button-is-down",
+							"objectClass": "Mouse",
+							"sid": 127767524860208,
+							"parameters": {
+								"mouse-button": "left"
+							}
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 815049505296985,
+							"parameters": {
+								"object": "ButtonBehavior"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "ButtonBehavior",
+							"sid": 188962729494771,
+							"parameters": {
+								"instance-variable": "InternalState",
+								"comparison": 0,
+								"value": "STATUS_HOVER"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 479406245617090
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "ButtonBehavior",
+							"sid": 816093894378869,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "STATUS_PRESSED",
+								"property": "scale",
+								"end-x": "1.2",
+								"end-y": "1.2",
+								"time": "0.15",
+								"ease": "easeinoutquart",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "ButtonBehavior",
+							"sid": 656117658916070,
+							"parameters": {
+								"animation": "STATUS_PRESSED",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "ButtonBehavior",
+							"sid": 206579604871201,
+							"parameters": {
+								"instance-variable": "InternalState",
+								"value": "STATUS_PRESSED"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "ButtonBehavior",
+							"sid": 516526901858716,
+							"parameters": {
+								"effect": "\"AdjustHSL\"",
+								"parameter-index": "2",
+								"value": "105"
+							}
+						}
+					],
+					"sid": 121269970719618
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "mouse-button-is-down",
+							"objectClass": "Mouse",
+							"sid": 558511290741997,
+							"parameters": {
+								"mouse-button": "left"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 236198294410828,
+							"parameters": {
+								"object": "ButtonBehavior"
+							}
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "ButtonBehavior",
+							"sid": 842868643322111,
+							"parameters": {
+								"instance-variable": "InternalState",
+								"comparison": 0,
+								"value": "STATUS_PRESSED"
+							}
+						},
+						{
+							"id": "is-playing",
+							"objectClass": "ButtonBehavior",
+							"sid": 683513530634701,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "STATUS_PRESSED"
+							},
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "ButtonBehavior",
+							"sid": 453244174208498,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "STATUS_HOVER",
+								"property": "scale",
+								"end-x": "1.09",
+								"end-y": "1.09",
+								"time": "0.2",
+								"ease": "easeinoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "ButtonBehavior",
+							"sid": 231340831989867,
+							"parameters": {
+								"animation": "STATUS_HOVER",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "ButtonBehavior",
+							"sid": 762569106240291,
+							"parameters": {
+								"instance-variable": "InternalState",
+								"value": "STATUS_HOVER"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "ButtonBehavior",
+							"sid": 528639249701206,
+							"parameters": {
+								"effect": "\"AdjustHSL\"",
+								"parameter-index": "2",
+								"value": "95"
+							}
+						}
+					],
+					"sid": 837580114682021
+				}
+			],
+			"sid": 272555372866281
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "ModalNative",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "variable",
+					"name": "DIRECTION_TOP",
+					"type": "string",
+					"initialValue": "\"Top\"",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 940247121312310
+				},
+				{
+					"eventType": "variable",
+					"name": "DIRECTION_BOTTOM",
+					"type": "string",
+					"initialValue": "\"Bottom\"",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 233095694687285
+				},
+				{
+					"eventType": "variable",
+					"name": "DIRECTION_LEFT",
+					"type": "string",
+					"initialValue": "\"Left\"",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 740526641875577
+				},
+				{
+					"eventType": "variable",
+					"name": "DIRECTION_RIGHT",
+					"type": "string",
+					"initialValue": "\"Right\"",
+					"comment": "",
+					"isStatic": false,
+					"isConstant": false,
+					"sid": 442710848244083
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 844680106490864
+						}
+					],
+					"actions": [
+						{
+							"id": "add-layer",
+							"objectClass": "System",
+							"sid": 962523861563777,
+							"parameters": {
+								"name": "MODAL_LAYER_NAME",
+								"insert-by": "MODAL_LAYER",
+								"where": "above"
+							}
+						},
+						{
+							"id": "move-to-layer",
+							"objectClass": "ModalBehavior",
+							"sid": 716257705323546,
+							"parameters": {
+								"layer": "MODAL_LAYER_NAME"
+							}
+						},
+						{
+							"id": "set-layer-parallax",
+							"objectClass": "System",
+							"sid": 908652135826619,
+							"parameters": {
+								"layer": "MODAL_LAYER_NAME",
+								"parallax-x": "0",
+								"parallax-y": "0"
+							}
+						}
+					],
+					"sid": 680121253290634,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "for-each",
+									"objectClass": "System",
+									"sid": 244779599242515,
+									"parameters": {
+										"object": "ModalBehavior"
+									}
+								}
+							],
+							"actions": [],
+							"sid": 470683054754672,
+							"children": [
+								{
+									"eventType": "variable",
+									"name": "posY",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 823834909208533
+								},
+								{
+									"eventType": "variable",
+									"name": "posX",
+									"type": "number",
+									"initialValue": "0",
+									"comment": "",
+									"isStatic": false,
+									"isConstant": false,
+									"sid": 901904616333009
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "compare-instance-variable",
+											"objectClass": "ModalBehavior",
+											"sid": 785067316358115,
+											"parameters": {
+												"instance-variable": "position",
+												"comparison": 0,
+												"value": "DIRECTION_TOP"
+											}
+										}
+									],
+									"actions": [
+										{
+											"type": "script",
+											"script": "localVars.posX = runtime.viewportWidth(runtime.globalVars.MODAL_LAYER_NAME) / 2\nconst offset = runtime.objects.ModalBehavior.getFirstPickedInstance().height * 2\nlocalVars.posY= (runtime.viewportHeight(runtime.globalVars.MODAL_LAYER_NAME) / 2) - offset"
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "ModalBehavior",
+											"sid": 541964658239666,
+											"parameters": {
+												"instance-variable": "position",
+												"value": "posX & \",\" & posY"
+											}
+										},
+										{
+											"id": "set-instvar-value",
+											"objectClass": "ModalBehavior",
+											"sid": 484733622333708,
+											"parameters": {
+												"instance-variable": "endPosition",
+												"value": "ViewportWidth(MODAL_LAYER_NAME) / 2 & \",\" & ViewportHeight(MODAL_LAYER_NAME) / 2"
+											}
+										}
+									],
+									"sid": 407716417397069
+								}
+							]
+						}
+					]
+				}
+			],
+			"sid": 260706392558052
+		}
+	],
+	"sid": 757620030039811
+}

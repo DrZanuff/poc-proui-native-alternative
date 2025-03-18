@@ -1,0 +1,39 @@
+{
+	"name": "ModalBehavior",
+	"plugin-id": "NinePatch",
+	"sid": 480955087081900,
+	"instanceVariables": [
+		{
+			"name": "slideDirection",
+			"type": "string",
+			"desc": "Top | Bottom | Left | Right",
+			"show": true,
+			"sid": 993622910093887
+		},
+		{
+			"name": "position",
+			"type": "string",
+			"desc": "Vector2D",
+			"show": false,
+			"sid": 554183304746636
+		},
+		{
+			"name": "endPosition",
+			"type": "string",
+			"desc": "Vector2D",
+			"show": false,
+			"sid": 650144307456364
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 796083847323508
+		}
+	],
+	"effectTypes": [],
+	"members": [
+		"ModalNative"
+	]
+}

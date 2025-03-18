@@ -1,0 +1,28 @@
+{
+	"name": "E_Main",
+	"events": [
+		{
+			"eventType": "include",
+			"includeSheet": "E_NativeUIBehavior"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 223013562628826
+				}
+			],
+			"actions": [
+				{
+					"id": "init",
+					"objectClass": "ProUI",
+					"sid": 682333569481917
+				}
+			],
+			"sid": 906813394060262
+		}
+	],
+	"sid": 310756895193816
+}

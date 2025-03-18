@@ -1,0 +1,31 @@
+{
+	"name": "ButtonBehavior",
+	"plugin-id": "Sprite",
+	"sid": 808156222034379,
+	"instanceVariables": [
+		{
+			"name": "InternalState",
+			"type": "string",
+			"desc": "Idle | Pressed | Hover",
+			"show": false,
+			"sid": 926175969422388
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Tween",
+			"name": "Tween",
+			"sid": 392941646411021
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "hsladjust",
+			"name": "AdjustHSL"
+		}
+	],
+	"members": [
+		"ButtonNative",
+		"RoundButtonNative"
+	]
+}

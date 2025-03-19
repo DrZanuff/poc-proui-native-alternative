@@ -1,0 +1,71 @@
+{
+	"name": "StarSpriteProUI",
+	"plugin-id": "Sprite",
+	"sid": 123048055795702,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Rotate",
+			"name": "Rotate",
+			"sid": 626862997440789
+		},
+		{
+			"behaviorId": "aekiro_gameobject",
+			"name": "GameObject",
+			"sid": 834825069756786
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 60,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 6078829,
+						"collisionPoly": {
+							"points": [
+								0.46875,
+								0,
+								0.5625,
+								0.016666666666666666,
+								1,
+								0.36666666666666664,
+								1,
+								0.43333333333333335,
+								0.8125,
+								1,
+								0.171875,
+								0.9833333333333333,
+								0,
+								0.43333333333333335,
+								0.015625,
+								0.3333333333333333
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 210050809619789,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

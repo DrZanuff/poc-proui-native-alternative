@@ -1,25 +1,35 @@
 const MODAL_TRANSITION_TIME = 1
 
-export function setIsModalOpen(runtime: IRuntime, status: boolean) {
-  const modal = runtime.objects.ModalBehavior.getFirstPickedInstance()
+export function setIsModalOpen(
+  runtime: IRuntime,
+  modalName: string,
+  status: boolean
+) {
+  const pickedModal = runtime.objects.ModalBehavior.getAllInstances().find(
+    (modal) => modal.instVars.modalName === modalName
+  )
 
-  if (!modal) {
+  if (!pickedModal) {
     return
   }
 
-  if (modal.instVars.isOpen === true && status === true) {
+  if (pickedModal.instVars.isOpen === true && status === true) {
     return
   }
 
-  modal.instVars.isOpen = status
+  if (pickedModal.instVars.isOpen === false && status === false) {
+    return
+  }
+
+  pickedModal.instVars.isOpen = status
 
   if (status === true) {
-    const targetPosition = modal.instVars.endPosition
+    const targetPosition = pickedModal.instVars.endPosition
       .split(',')
       .map((coord) => Number(coord))
 
     const ease: EaseName = 'out-elastic'
-    modal.behaviors.Tween.startTween(
+    pickedModal.behaviors.Tween.startTween(
       'position',
       targetPosition,
       MODAL_TRANSITION_TIME,
@@ -29,15 +39,15 @@ export function setIsModalOpen(runtime: IRuntime, status: boolean) {
     return
   }
 
-  const targeOriginalPosition = modal.instVars.position
+  const targeOriginalPosition = pickedModal.instVars.position
     .split(',')
     .map((coord) => Number(coord))
 
-  const ease: EaseName = 'out-elastic'
-  modal.behaviors.Tween.startTween(
+  const ease: EaseName = 'in-sine'
+  pickedModal.behaviors.Tween.startTween(
     'position',
     targeOriginalPosition,
-    MODAL_TRANSITION_TIME,
+    MODAL_TRANSITION_TIME / 4,
     ease
   )
 }

@@ -1,11 +1,22 @@
 {
-	"name": "RoundButtonNative",
+	"name": "RoundButtonProUI",
 	"plugin-id": "Sprite",
-	"sid": 791985892132526,
+	"sid": 715427891044093,
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "aekiro_button",
+			"name": "Button",
+			"sid": 769192018080722
+		},
+		{
+			"behaviorId": "aekiro_gameobject",
+			"name": "GameObject",
+			"sid": 173807933731790
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -20,7 +31,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5779160,
+						"imageSpriteId": 1139375,
 						"collisionPoly": {
 							"points": [
 								0.015625,
@@ -38,7 +49,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 568125479036787,
+				"sid": 754067081611667,
 				"name": "Idle",
 				"isLooping": false,
 				"isPingPong": false,
@@ -57,7 +68,44 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3415386,
+						"imageSpriteId": 4144307,
+						"collisionPoly": {
+							"points": [
+								0.015625,
+								0,
+								1,
+								0.03125,
+								0.9895833333333334,
+								1,
+								0,
+								0.953125
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 215001601742577,
+				"name": "Hover",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 9522360,
 						"collisionPoly": {
 							"points": [
 								0.390625,
@@ -123,7 +171,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 336847152384433,
+				"sid": 354626211195850,
 				"name": "Pressed",
 				"isLooping": false,
 				"isPingPong": false,
@@ -142,7 +190,7 @@
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 5729742,
+						"imageSpriteId": 3440209,
 						"collisionPoly": {
 							"points": [
 								0.390625,
@@ -208,7 +256,7 @@
 						"tag": ""
 					}
 				],
-				"sid": 894970447178320,
+				"sid": 915089049264239,
 				"name": "Disabled",
 				"isLooping": false,
 				"isPingPong": false,

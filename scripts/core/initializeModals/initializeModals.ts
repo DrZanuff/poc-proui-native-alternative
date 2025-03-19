@@ -14,6 +14,10 @@ export function initializeModals(runtime: IRuntime) {
   }
 
   modals.forEach((modal: InstanceType.ModalBehavior) => {
+    modal.layer
+    const children = [...modal.allChildren()]
+    children.forEach((child) => child.moveToLayer(modal.layer))
+
     const initialPosition = {
       x: 0,
       y: 0,

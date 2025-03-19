@@ -62,158 +62,6 @@
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 334532804865717,
-							"parameters": {
-								"object": "ButtonBehavior"
-							}
-						},
-						{
-							"id": "trigger-once-while-true",
-							"objectClass": "System",
-							"sid": 200494918937642
-						}
-					],
-					"actions": [
-						{
-							"id": "tween-two-properties",
-							"objectClass": "ButtonBehavior",
-							"sid": 996404939709671,
-							"behaviorType": "Tween",
-							"parameters": {
-								"tags": "STATUS_HOVER",
-								"property": "scale",
-								"end-x": "1.09",
-								"end-y": "1.09",
-								"time": "0.2",
-								"ease": "easeinoutsine",
-								"destroy-on-complete": "no",
-								"loop": "no",
-								"ping-pong": "no",
-								"repeat-count": "1"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "ButtonBehavior",
-							"sid": 938049994322238,
-							"parameters": {
-								"instance-variable": "InternalState",
-								"value": "STATUS_HOVER"
-							}
-						},
-						{
-							"id": "set-effect-parameter",
-							"objectClass": "ButtonBehavior",
-							"sid": 147461596286076,
-							"parameters": {
-								"effect": "\"AdjustHSL\"",
-								"parameter-index": "2",
-								"value": "95"
-							}
-						},
-						{
-							"id": "set-cursor-style2",
-							"objectClass": "Mouse",
-							"sid": 965160097183031,
-							"parameters": {
-								"cursor-style": "pointer"
-							}
-						}
-					],
-					"sid": 245922239112065
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "cursor-is-over-object",
-							"objectClass": "Mouse",
-							"sid": 828764021165589,
-							"parameters": {
-								"object": "ButtonBehavior"
-							},
-							"isInverted": true
-						},
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "ButtonBehavior",
-							"sid": 939550822055323,
-							"parameters": {
-								"instance-variable": "InternalState",
-								"comparison": 0,
-								"value": "STATUS_HOVER"
-							}
-						},
-						{
-							"id": "trigger-once-while-true",
-							"objectClass": "System",
-							"sid": 384563002690371
-						}
-					],
-					"actions": [
-						{
-							"id": "tween-two-properties",
-							"objectClass": "ButtonBehavior",
-							"sid": 971383893154204,
-							"behaviorType": "Tween",
-							"parameters": {
-								"tags": "STATUS_IDLE",
-								"property": "scale",
-								"end-x": "1",
-								"end-y": "1",
-								"time": "0.2",
-								"ease": "easeinoutsine",
-								"destroy-on-complete": "no",
-								"loop": "no",
-								"ping-pong": "no",
-								"repeat-count": "1"
-							}
-						},
-						{
-							"id": "set-animation",
-							"objectClass": "ButtonBehavior",
-							"sid": 444811191544809,
-							"parameters": {
-								"animation": "STATUS_IDLE",
-								"from": "beginning"
-							}
-						},
-						{
-							"id": "set-instvar-value",
-							"objectClass": "ButtonBehavior",
-							"sid": 791058656782191,
-							"parameters": {
-								"instance-variable": "InternalState",
-								"value": "STATUS_IDLE"
-							}
-						},
-						{
-							"id": "set-effect-parameter",
-							"objectClass": "ButtonBehavior",
-							"sid": 391700285717707,
-							"parameters": {
-								"effect": "\"AdjustHSL\"",
-								"parameter-index": "2",
-								"value": "100"
-							}
-						},
-						{
-							"id": "set-cursor-style2",
-							"objectClass": "Mouse",
-							"sid": 724543190607674,
-							"parameters": {
-								"cursor-style": "normal"
-							}
-						}
-					],
-					"sid": 650283128384862
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
 							"id": "mouse-button-is-down",
 							"objectClass": "Mouse",
 							"sid": 127767524860208,
@@ -385,6 +233,159 @@
 						}
 					],
 					"sid": 837580114682021
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 960257747031802,
+							"parameters": {
+								"object": "ButtonBehavior"
+							}
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 283329716591194
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "ButtonBehavior",
+							"sid": 687007491525756,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "STATUS_HOVER",
+								"property": "scale",
+								"end-x": "1.09",
+								"end-y": "1.09",
+								"time": "0.2",
+								"ease": "easeinoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "ButtonBehavior",
+							"sid": 933990787765120,
+							"parameters": {
+								"instance-variable": "InternalState",
+								"value": "STATUS_HOVER"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "ButtonBehavior",
+							"sid": 389696559140119,
+							"parameters": {
+								"effect": "\"AdjustHSL\"",
+								"parameter-index": "2",
+								"value": "95"
+							}
+						},
+						{
+							"id": "set-cursor-style2",
+							"objectClass": "Mouse",
+							"sid": 911654609071083,
+							"parameters": {
+								"cursor-style": "pointer"
+							}
+						}
+					],
+					"sid": 943392630476845
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "cursor-is-over-object",
+							"objectClass": "Mouse",
+							"sid": 392788653264204,
+							"parameters": {
+								"object": "ButtonBehavior"
+							},
+							"isInverted": true
+						},
+						{
+							"id": "trigger-once-while-true",
+							"objectClass": "System",
+							"sid": 325669708452469
+						},
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "ButtonBehavior",
+							"sid": 653190006258395,
+							"disabled": true,
+							"parameters": {
+								"instance-variable": "InternalState",
+								"comparison": 0,
+								"value": "STATUS_HOVER"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "tween-two-properties",
+							"objectClass": "ButtonBehavior",
+							"sid": 515493407743935,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "STATUS_IDLE",
+								"property": "scale",
+								"end-x": "1",
+								"end-y": "1",
+								"time": "0.2",
+								"ease": "easeinoutsine",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no",
+								"repeat-count": "1"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "ButtonBehavior",
+							"sid": 630817728379106,
+							"parameters": {
+								"animation": "STATUS_IDLE",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "ButtonBehavior",
+							"sid": 685582401209101,
+							"parameters": {
+								"instance-variable": "InternalState",
+								"value": "STATUS_IDLE"
+							}
+						},
+						{
+							"id": "set-effect-parameter",
+							"objectClass": "ButtonBehavior",
+							"sid": 478957751263810,
+							"parameters": {
+								"effect": "\"AdjustHSL\"",
+								"parameter-index": "2",
+								"value": "100"
+							}
+						},
+						{
+							"id": "set-cursor-style2",
+							"objectClass": "Mouse",
+							"sid": 297535913166434,
+							"parameters": {
+								"cursor-style": "normal"
+							}
+						}
+					],
+					"sid": 370657552156120
 				}
 			],
 			"sid": 272555372866281

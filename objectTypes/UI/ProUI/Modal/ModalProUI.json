@@ -5,7 +5,23 @@
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "aekiro_gameobject",
+			"name": "GameObject",
+			"sid": 346727508397098
+		},
+		{
+			"behaviorId": "aekiro_dialog",
+			"name": "Dialog",
+			"sid": 955722733443105
+		},
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 270270649615104
+		}
+	],
 	"effectTypes": [],
 	"image": {
 		"width": 64,

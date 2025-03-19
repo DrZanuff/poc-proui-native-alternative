@@ -12,6 +12,9 @@ export function initializeModals(runtime) {
         y: runtime.viewportHeight / 2,
     };
     modals.forEach((modal) => {
+        modal.layer;
+        const children = [...modal.allChildren()];
+        children.forEach((child) => child.moveToLayer(modal.layer));
         const initialPosition = {
             x: 0,
             y: 0,

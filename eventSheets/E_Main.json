@@ -40,10 +40,61 @@
 			"actions": [
 				{
 					"type": "script",
-					"script": "setIsModalOpen(runtime, true)"
+					"script": "setIsModalOpen(runtime, \"mainModal\", true)"
 				}
 			],
 			"sid": 766853685618129
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 558764547992279,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "RoundButtonNative"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "setIsModalOpen(runtime, \"mainModal\", false)"
+				}
+			],
+			"sid": 862591500876778
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 848857539374892,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ButtonProUI"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "open0",
+					"objectClass": "ModalProUI",
+					"sid": 800994951089888,
+					"behaviorType": "Dialog",
+					"parameters": {
+						"target_x0": "0",
+						"target_y1": "0",
+						"center4": "yes"
+					}
+				}
+			],
+			"sid": 749971216550981
 		}
 	],
 	"sid": 310756895193816

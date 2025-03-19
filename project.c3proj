@@ -58,6 +58,20 @@
 		},
 		{
 			"type": "behavior",
+			"id": "DragnDrop",
+			"name": "Drag & Drop",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Rotate",
+			"name": "Rotate",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween",
 			"author": "Scirra",
@@ -67,6 +81,22 @@
 			"type": "behavior",
 			"id": "aekiro_button",
 			"name": "Button",
+			"author": "Aekiro",
+			"bundled": false,
+			"version": "1.820"
+		},
+		{
+			"type": "behavior",
+			"id": "aekiro_dialog",
+			"name": "Dialog",
+			"author": "Aekiro",
+			"bundled": false,
+			"version": "1.820"
+		},
+		{
+			"type": "behavior",
+			"id": "aekiro_gameobject",
+			"name": "Game Object",
 			"author": "Aekiro",
 			"bundled": false,
 			"version": "1.820"
@@ -92,8 +122,11 @@
 		"items": [
 			"Mouse",
 			"ProUI",
-			"CloseIconNative",
-			"Browser"
+			"Browser",
+			"TextSampleNative",
+			"StarSpriteNative",
+			"TextSampleProUI",
+			"StarSpriteProUI"
 		],
 		"subfolders": [
 			{
@@ -121,7 +154,8 @@
 								"items": [
 									"ButtonNative",
 									"TextButttonNative",
-									"RoundButtonNative"
+									"RoundButtonNative",
+									"CloseIconNative"
 								],
 								"subfolders": [],
 								"name": "Button"
@@ -142,7 +176,9 @@
 							{
 								"items": [
 									"ButtonProUI",
-									"TextButttonProUI"
+									"TextButttonProUI",
+									"RoundButtonProUI",
+									"CloseIconProUI"
 								],
 								"subfolders": [],
 								"name": "Button"
@@ -180,6 +216,12 @@
 			"members": [
 				"CloseIconNative",
 				"RoundButtonNative"
+			]
+		},
+		{
+			"members": [
+				"CloseIconProUI",
+				"RoundButtonProUI"
 			]
 		}
 	],

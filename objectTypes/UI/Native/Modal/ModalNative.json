@@ -5,7 +5,13 @@
 	"isGlobal": false,
 	"editorNewInstanceIsReplica": true,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 788802457107697
+		}
+	],
 	"effectTypes": [],
 	"image": {
 		"width": 64,

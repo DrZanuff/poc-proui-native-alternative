@@ -1,0 +1,21 @@
+{
+	"name": "TextSampleProUI",
+	"plugin-id": "Text",
+	"sid": 137580458842865,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "aekiro_gameobject",
+			"name": "GameObject",
+			"sid": 472529418950328
+		}
+	],
+	"effectTypes": [
+		{
+			"effectId": "outline",
+			"name": "Outline"
+		}
+	]
+}

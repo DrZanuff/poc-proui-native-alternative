@@ -11,6 +11,13 @@
 			"sid": 993622910093887
 		},
 		{
+			"name": "modalName",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 731421291573466
+		},
+		{
 			"name": "position",
 			"type": "string",
 			"desc": "Vector2D",

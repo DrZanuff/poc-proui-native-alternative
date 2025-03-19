@@ -266,7 +266,7 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 256,
+						"x": 224,
 						"y": 224,
 						"width": 192,
 						"height": 64,
@@ -607,7 +607,7 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 608,
+						"x": 672,
 						"y": 224,
 						"width": 192,
 						"height": 64,
@@ -691,7 +691,7 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 160,
+						"x": 128,
 						"y": 192,
 						"width": 192,
 						"height": 64,
@@ -775,7 +775,7 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 512,
+						"x": 576,
 						"y": 192,
 						"width": 192,
 						"height": 64,
@@ -809,6 +809,7 @@
 					"tags": "",
 					"instanceVariables": {
 						"slideDirection": "Top",
+						"modalName": "",
 						"position": "0,0",
 						"endPosition": "0,0",
 						"isOpen": false
@@ -816,6 +817,12 @@
 					"behaviors": {
 						"Tween": {
 							"properties": {
+								"enabled": true
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
 								"enabled": true
 							}
 						}
@@ -895,6 +902,10 @@
 											{
 												"iv": "isOpen",
 												"state": true
+											},
+											{
+												"iv": "modalName",
+												"state": true
 											}
 										]
 									}
@@ -906,6 +917,19 @@
 									{
 										"key": "Tween",
 										"state": [
+											[
+												"enabled",
+												true
+											]
+										]
+									},
+									{
+										"key": "DragDrop",
+										"state": [
+											[
+												"axes",
+												true
+											],
 											[
 												"enabled",
 												true
@@ -1020,8 +1044,8 @@
 									"w": true,
 									"h": true,
 									"a": true,
-									"o": false,
-									"v": false,
+									"o": true,
+									"v": true,
 									"d": true,
 									"sm": "normal"
 								}
@@ -1095,7 +1119,271 @@
 					"sid": 157772444256776,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"GameObject": {
+							"properties": {
+								"name": "",
+								"parent-name": "",
+								"parent-layer": true
+							}
+						},
+						"Dialog": {
+							"properties": {
+								"open-animation": "slidedown",
+								"open-animation-tweenning": "elastic out",
+								"open-animation-duration": 1000,
+								"open-sound": "",
+								"close-animation": "reverse",
+								"close-animation-tweenning": "circular out",
+								"close-animation-duration": 1000,
+								"close-sound": "",
+								"close-button-name": "closeButtonProUI",
+								"is-modal": "no"
+							}
+						},
+						"DragDrop": {
+							"properties": {
+								"axes": "both",
+								"enabled": true
+							}
+						}
+					},
+					"template": {
+						"mode": "template",
+						"templateName": "modalProUI",
+						"sourceTemplateName": "",
+						"replicaHierarchyInSyncWithTemplate": false,
+						"templatePropagateHierarchyChanges": true,
+						"replicaIgnoreTemplateHierarchyChanges": false,
+						"components": [
+							{
+								"id": "plugin",
+								"component": [
+									{
+										"key": "plugin",
+										"state": [
+											[
+												"left-margin",
+												true
+											],
+											[
+												"right-margin",
+												true
+											],
+											[
+												"top-margin",
+												true
+											],
+											[
+												"bottom-margin",
+												true
+											],
+											[
+												"edges",
+												true
+											],
+											[
+												"fill",
+												true
+											],
+											[
+												"initially-visible",
+												true
+											],
+											[
+												"origin",
+												true
+											],
+											[
+												"seams",
+												true
+											]
+										]
+									}
+								]
+							},
+							{
+								"id": "instance-variable",
+								"component": [
+									{
+										"key": "instance-variable",
+										"state": []
+									}
+								]
+							},
+							{
+								"id": "behavior",
+								"component": [
+									{
+										"key": "GameObject",
+										"state": [
+											[
+												"name",
+												true
+											],
+											[
+												"parent-name",
+												true
+											],
+											[
+												"parent-layer",
+												true
+											]
+										]
+									},
+									{
+										"key": "Dialog",
+										"state": [
+											[
+												"open-animation",
+												true
+											],
+											[
+												"open-animation-tweenning",
+												true
+											],
+											[
+												"open-animation-duration",
+												true
+											],
+											[
+												"open-sound",
+												true
+											],
+											[
+												"close-animation",
+												true
+											],
+											[
+												"close-animation-tweenning",
+												true
+											],
+											[
+												"close-animation-duration",
+												true
+											],
+											[
+												"close-sound",
+												true
+											],
+											[
+												"close-button-name",
+												true
+											],
+											[
+												"is-modal",
+												true
+											]
+										]
+									},
+									{
+										"key": "DragDrop",
+										"state": [
+											[
+												"axes",
+												true
+											],
+											[
+												"enabled",
+												true
+											]
+										]
+									}
+								]
+							},
+							{
+								"id": "effect",
+								"component": []
+							},
+							{
+								"id": "world-instance",
+								"component": [
+									{
+										"key": "world-instance",
+										"state": [
+											[
+												"x",
+												false
+											],
+											[
+												"y",
+												false
+											],
+											[
+												"z",
+												true
+											],
+											[
+												"w",
+												true
+											],
+											[
+												"h",
+												true
+											],
+											[
+												"a",
+												true
+											],
+											[
+												"o",
+												true
+											],
+											[
+												"c",
+												true
+											],
+											[
+												"sx",
+												true
+											],
+											[
+												"sy",
+												true
+											],
+											[
+												"bm",
+												true
+											],
+											[
+												"twpx",
+												true
+											],
+											[
+												"twpy",
+												true
+											],
+											[
+												"twpz",
+												true
+											],
+											[
+												"twpw",
+												true
+											],
+											[
+												"twph",
+												true
+											],
+											[
+												"twpa",
+												true
+											],
+											[
+												"dwp",
+												true
+											],
+											[
+												"ssm",
+												true
+											]
+										]
+									}
+								]
+							}
+						],
+						"replicasUIDs": null
+					},
 					"instanceFolderItem": {
 						"sid": 157772444256776,
 						"expanded": true,
@@ -1107,7 +1395,7 @@
 					"locked": false,
 					"world": {
 						"x": 704,
-						"y": 288,
+						"y": 512,
 						"width": 384,
 						"height": 320,
 						"originX": 0.5,
@@ -1354,8 +1642,8 @@
 							"w": true,
 							"h": true,
 							"a": true,
-							"o": false,
-							"v": false,
+							"o": true,
+							"v": true,
 							"d": true,
 							"sm": "normal"
 						},
@@ -1451,6 +1739,471 @@
 					"locked": false,
 					"world": {
 						"x": 416,
+						"y": 352,
+						"width": 36,
+						"height": 36,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "RoundButtonProUI",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 27,
+					"sid": 673642541572313,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {
+						"Button": {
+							"properties": {
+								"isenabled": "true",
+								"normal-frame": "Idle",
+								"hover-frame": "Hover",
+								"clicked-frame": "Pressed",
+								"disabled-frame": "Disabled",
+								"focus-frame": "",
+								"click-sound": "",
+								"hover-sound": "",
+								"focus-sound": "",
+								"click-animation": "none",
+								"hover-animation": "none",
+								"focus-animation": "none",
+								"normal-color": "",
+								"hover-color": "",
+								"clicked-color": "",
+								"disabled-color": "",
+								"focus-color": "",
+								"click-animation-factor": 0.1,
+								"hover-animation-factor": 0.1,
+								"focus-animation-factor": 0.1,
+								"ignore-input": "auto"
+							}
+						},
+						"GameObject": {
+							"properties": {
+								"name": "closeButtonProUI",
+								"parent-name": "",
+								"parent-layer": false
+							}
+						}
+					},
+					"template": {
+						"mode": "template",
+						"templateName": "btnRoundProUI",
+						"sourceTemplateName": "",
+						"replicaHierarchyInSyncWithTemplate": true,
+						"templatePropagateHierarchyChanges": true,
+						"replicaIgnoreTemplateHierarchyChanges": false,
+						"components": [
+							{
+								"id": "plugin",
+								"component": [
+									{
+										"key": "plugin",
+										"state": [
+											[
+												"initially-visible",
+												true
+											],
+											[
+												"initial-animation",
+												true
+											],
+											[
+												"initial-frame",
+												true
+											],
+											[
+												"enable-collisions",
+												true
+											]
+										]
+									}
+								]
+							},
+							{
+								"id": "instance-variable",
+								"component": [
+									{
+										"key": "instance-variable",
+										"state": [
+											{
+												"iv": "InternalState",
+												"state": true
+											}
+										]
+									}
+								]
+							},
+							{
+								"id": "behavior",
+								"component": [
+									{
+										"key": "Tween",
+										"state": [
+											[
+												"enabled",
+												true
+											]
+										]
+									},
+									{
+										"key": "Button",
+										"state": [
+											[
+												"isenabled",
+												true
+											],
+											[
+												"normal-frame",
+												true
+											],
+											[
+												"hover-frame",
+												true
+											],
+											[
+												"clicked-frame",
+												true
+											],
+											[
+												"disabled-frame",
+												true
+											],
+											[
+												"focus-frame",
+												true
+											],
+											[
+												"click-sound",
+												true
+											],
+											[
+												"hover-sound",
+												true
+											],
+											[
+												"focus-sound",
+												true
+											],
+											[
+												"click-animation",
+												true
+											],
+											[
+												"hover-animation",
+												true
+											],
+											[
+												"focus-animation",
+												true
+											],
+											[
+												"normal-color",
+												true
+											],
+											[
+												"hover-color",
+												true
+											],
+											[
+												"clicked-color",
+												true
+											],
+											[
+												"disabled-color",
+												true
+											],
+											[
+												"focus-color",
+												true
+											],
+											[
+												"click-animation-factor",
+												true
+											],
+											[
+												"hover-animation-factor",
+												true
+											],
+											[
+												"focus-animation-factor",
+												true
+											],
+											[
+												"ignore-input",
+												true
+											]
+										]
+									},
+									{
+										"key": "GameObject",
+										"state": [
+											[
+												"name",
+												true
+											],
+											[
+												"parent-name",
+												true
+											],
+											[
+												"parent-layer",
+												true
+											]
+										]
+									}
+								]
+							},
+							{
+								"id": "effect",
+								"component": [
+									{
+										"key": "AdjustHSL",
+										"state": [
+											[
+												"hue",
+												true
+											],
+											[
+												"saturation",
+												true
+											],
+											[
+												"luminosity",
+												true
+											]
+										]
+									}
+								]
+							},
+							{
+								"id": "world-instance",
+								"component": [
+									{
+										"key": "world-instance",
+										"state": [
+											[
+												"x",
+												false
+											],
+											[
+												"y",
+												false
+											],
+											[
+												"z",
+												true
+											],
+											[
+												"w",
+												true
+											],
+											[
+												"h",
+												true
+											],
+											[
+												"a",
+												true
+											],
+											[
+												"o",
+												true
+											],
+											[
+												"c",
+												true
+											],
+											[
+												"sx",
+												true
+											],
+											[
+												"sy",
+												true
+											],
+											[
+												"bm",
+												true
+											],
+											[
+												"twpx",
+												true
+											],
+											[
+												"twpy",
+												true
+											],
+											[
+												"twpz",
+												true
+											],
+											[
+												"twpw",
+												true
+											],
+											[
+												"twph",
+												true
+											],
+											[
+												"twpa",
+												true
+											],
+											[
+												"dwp",
+												true
+											],
+											[
+												"ssm",
+												true
+											]
+										]
+									}
+								]
+							}
+						],
+						"replicasUIDs": null
+					},
+					"sceneGraphData": {
+						"parent-uid": null,
+						"uid": 27,
+						"children": [
+							{
+								"uid": 28,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": true,
+									"v": true,
+									"d": true,
+									"sm": "normal"
+								}
+							}
+						],
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": true,
+							"v": true,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 673642541572313,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 896,
+						"y": 352,
+						"width": 64,
+						"height": 64,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "CloseIconProUI",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 28,
+					"sid": 387914672691499,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"sceneGraphData": {
+						"parent-uid": 27,
+						"uid": 28,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": true,
+							"v": true,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 387914672691499,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 896,
 						"y": 352,
 						"width": 36,
 						"height": 36,

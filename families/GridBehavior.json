@@ -1,0 +1,33 @@
+{
+	"name": "GridBehavior",
+	"plugin-id": "TiledBg",
+	"sid": 460159029348668,
+	"instanceVariables": [
+		{
+			"name": "columns",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 511792058398575
+		},
+		{
+			"name": "horizontalSpacing",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 442267407848915
+		},
+		{
+			"name": "verticalSpacing",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 900068093667926
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"GridObjectNative"
+	]
+}

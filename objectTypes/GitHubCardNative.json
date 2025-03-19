@@ -1,0 +1,45 @@
+{
+	"name": "GitHubCardNative",
+	"plugin-id": "NinePatch",
+	"sid": 212941003784561,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [
+		{
+			"name": "repoName",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 479622073623960
+		},
+		{
+			"name": "repoLanguage",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 303165230573256
+		},
+		{
+			"name": "repoUrl",
+			"type": "string",
+			"desc": "",
+			"show": true,
+			"sid": 795551728028083
+		}
+	],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 32,
+		"height": 32,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 1133764,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

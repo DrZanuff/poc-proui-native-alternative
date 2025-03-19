@@ -12,6 +12,14 @@
 					"id": "on-start-of-layout",
 					"objectClass": "System",
 					"sid": 223013562628826
+				},
+				{
+					"id": "pick-last-created",
+					"objectClass": "System",
+					"sid": 278683569353335,
+					"parameters": {
+						"object": "GridBehavior"
+					}
 				}
 			],
 			"actions": [
@@ -19,6 +27,10 @@
 					"id": "init",
 					"objectClass": "ProUI",
 					"sid": 682333569481917
+				},
+				{
+					"type": "script",
+					"script": "async function preparePage() {\n  const repos = await fetchGitHubRepos('DrZanuff', 6)\n  generateGrid({\n    grid: runtime.objects.GridBehavior.getFirstPickedInstance(),\n    callback: () => generateGithubCards(runtime,repos),\n    totalElements: 4,\n  })\n}\n\npreparePage()"
 				}
 			],
 			"sid": 906813394060262

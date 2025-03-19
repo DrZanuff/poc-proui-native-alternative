@@ -1,10 +1,4 @@
-type GitHubRepo = {
-  name: string
-  language: string | null
-  html_url: string
-}
-
-async function fetchGitHubRepos(
+export async function fetchGitHubRepos(
   username: string,
   quantity: number
 ): Promise<GitHubRepo[]> {

@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "HTMLElement",
+			"name": "HTML Element",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
@@ -121,7 +128,12 @@
 	"objectTypes": {
 		"items": [
 			"Mouse",
-			"ProUI"
+			"ProUI",
+			"GitHubCardNative",
+			"HTMLElementURLNative",
+			"TextRepoNameNative",
+			"TextLanguageNative",
+			"GridObjectNative"
 		],
 		"subfolders": [
 			{
@@ -240,12 +252,21 @@
 				"CloseIconProUI",
 				"RoundButtonProUI"
 			]
+		},
+		{
+			"members": [
+				"GitHubCardNative",
+				"HTMLElementURLNative",
+				"TextLanguageNative",
+				"TextRepoNameNative"
+			]
 		}
 	],
 	"families": {
 		"items": [
 			"ButtonBehavior",
-			"ModalBehavior"
+			"ModalBehavior",
+			"GridBehavior"
 		],
 		"subfolders": []
 	},
@@ -318,16 +339,44 @@
 						{
 							"items": [
 								{
-									"name": "scrollContent.js",
+									"name": "getGithubRepos.js",
 									"type": "application/javascript",
-									"sid": 934649705628016,
+									"sid": 726448065074039,
 									"script-info": {
 										"purpose": "none"
 									}
 								}
 							],
 							"subfolders": [],
-							"name": "scrollContent"
+							"name": "getGithubRepos"
+						},
+						{
+							"items": [
+								{
+									"name": "generateGithubCards.js",
+									"type": "application/javascript",
+									"sid": 769141593600368,
+									"script-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "generateGithubCards"
+						},
+						{
+							"items": [
+								{
+									"name": "generateGrid.js",
+									"type": "application/javascript",
+									"sid": 957791515218923,
+									"script-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "generateGrid"
 						}
 					],
 					"name": "core"

@@ -8,13 +8,6 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Browser",
-			"name": "Browser",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
@@ -102,6 +95,13 @@
 			"version": "1.820"
 		},
 		{
+			"type": "behavior",
+			"id": "bound",
+			"name": "Bound to layout",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
 			"type": "effect",
 			"id": "hsladjust",
 			"name": "Adjust HSL",
@@ -121,12 +121,7 @@
 	"objectTypes": {
 		"items": [
 			"Mouse",
-			"ProUI",
-			"Browser",
-			"TextSampleNative",
-			"StarSpriteNative",
-			"TextSampleProUI",
-			"StarSpriteProUI"
+			"ProUI"
 		],
 		"subfolders": [
 			{
@@ -162,10 +157,22 @@
 							},
 							{
 								"items": [
-									"ModalNative"
+									"ModalNative",
+									"TextSampleNative"
 								],
 								"subfolders": [],
 								"name": "Modal"
+							},
+							{
+								"items": [
+									"CheckNative",
+									"ScrollMaskNative",
+									"ScrollWindowNative",
+									"StarSpriteNative",
+									"TextScrollNative"
+								],
+								"subfolders": [],
+								"name": "Scroll"
 							}
 						],
 						"name": "Native"
@@ -185,10 +192,20 @@
 							},
 							{
 								"items": [
-									"ModalProUI"
+									"ModalProUI",
+									"TextSampleProUI",
+									"StarSpriteProUI"
 								],
 								"subfolders": [],
 								"name": "Modal"
+							},
+							{
+								"items": [
+									"ScrollWindoProUI",
+									"TextScrollProUI"
+								],
+								"subfolders": [],
+								"name": "Scroll"
 							}
 						],
 						"name": "ProUI"

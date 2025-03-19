@@ -1,0 +1,23 @@
+{
+	"name": "ScrollWindoProUI",
+	"plugin-id": "NinePatch",
+	"sid": 285051538785269,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"image": {
+		"width": 64,
+		"height": 64,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 228240,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

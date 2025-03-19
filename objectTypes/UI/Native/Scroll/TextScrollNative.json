@@ -1,0 +1,21 @@
+{
+	"name": "TextScrollNative",
+	"plugin-id": "Text",
+	"sid": 548020291953771,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "DragnDrop",
+			"name": "DragDrop",
+			"sid": 697340116025336
+		},
+		{
+			"behaviorId": "bound",
+			"name": "BoundToLayout",
+			"sid": 323100782452122
+		}
+	],
+	"effectTypes": []
+}

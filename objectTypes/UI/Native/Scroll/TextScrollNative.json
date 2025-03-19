@@ -9,12 +9,12 @@
 		{
 			"behaviorId": "DragnDrop",
 			"name": "DragDrop",
-			"sid": 697340116025336
+			"sid": 774493706882795
 		},
 		{
 			"behaviorId": "bound",
 			"name": "BoundToLayout",
-			"sid": 323100782452122
+			"sid": 633218191337511
 		}
 	],
 	"effectTypes": []

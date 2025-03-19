@@ -314,6 +314,20 @@
 							],
 							"subfolders": [],
 							"name": "setIsModalOpen"
+						},
+						{
+							"items": [
+								{
+									"name": "scrollContent.js",
+									"type": "application/javascript",
+									"sid": 934649705628016,
+									"script-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "scrollContent"
 						}
 					],
 					"name": "core"
@@ -474,6 +488,6 @@
 		"uidAllocationMode": "increment"
 	},
 	"viewportWidth": 960,
-	"viewportHeight": 480,
+	"viewportHeight": 690,
 	"firstLayout": "Main"
 }

@@ -53,7 +53,7 @@
 						"x": 0,
 						"y": 0,
 						"width": 480,
-						"height": 480,
+						"height": 704,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -113,7 +113,7 @@
 						"x": 480,
 						"y": 0,
 						"width": 480,
-						"height": 480,
+						"height": 704,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -163,7 +163,7 @@
 						"x": 480,
 						"y": 0,
 						"width": 32,
-						"height": 480,
+						"height": 703,
 						"originX": 0.5,
 						"originY": 0,
 						"color": [
@@ -243,9 +243,9 @@
 							"showing": true,
 							"locked": false,
 							"world": {
-								"x": 64,
+								"x": 32,
 								"y": 96,
-								"width": 320,
+								"width": 416,
 								"height": 256,
 								"originX": 0,
 								"originY": 0,
@@ -550,7 +550,7 @@
 									"world": {
 										"x": 64,
 										"y": 105.67857142857144,
-										"width": 320,
+										"width": 288,
 										"height": 239.32142857142856,
 										"originX": 0,
 										"originY": 0,
@@ -1155,7 +1155,7 @@
 					"locked": false,
 					"world": {
 						"x": 224,
-						"y": 416,
+						"y": 640,
 						"width": 192,
 						"height": 64,
 						"originX": 0.5,
@@ -1239,7 +1239,7 @@
 					"locked": false,
 					"world": {
 						"x": 128,
-						"y": 384,
+						"y": 608,
 						"width": 192,
 						"height": 64,
 						"originX": 0,
@@ -1580,7 +1580,7 @@
 					"locked": false,
 					"world": {
 						"x": 736,
-						"y": 416,
+						"y": 640,
 						"width": 192,
 						"height": 64,
 						"originX": 0.5,
@@ -1664,7 +1664,7 @@
 					"locked": false,
 					"world": {
 						"x": 640,
-						"y": 384,
+						"y": 608,
 						"width": 192,
 						"height": 64,
 						"originX": 0,
@@ -1780,6 +1780,10 @@
 												"state": true
 											},
 											{
+												"iv": "modalName",
+												"state": false
+											},
+											{
 												"iv": "position",
 												"state": true
 											},
@@ -1790,10 +1794,6 @@
 											{
 												"iv": "isOpen",
 												"state": true
-											},
-											{
-												"iv": "modalName",
-												"state": false
 											}
 										]
 									}
@@ -3843,7 +3843,7 @@
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 960,
-	"height": 480,
+	"height": 690,
 	"unboundedScrolling": false,
 	"vpX": 0.5,
 	"vpY": 0.5,

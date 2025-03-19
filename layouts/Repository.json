@@ -892,6 +892,10 @@
 												"state": true
 											},
 											{
+												"iv": "modalName",
+												"state": true
+											},
+											{
 												"iv": "position",
 												"state": true
 											},
@@ -901,10 +905,6 @@
 											},
 											{
 												"iv": "isOpen",
-												"state": true
-											},
-											{
-												"iv": "modalName",
 												"state": true
 											}
 										]
@@ -1840,27 +1840,13 @@
 								"component": [
 									{
 										"key": "instance-variable",
-										"state": [
-											{
-												"iv": "InternalState",
-												"state": true
-											}
-										]
+										"state": []
 									}
 								]
 							},
 							{
 								"id": "behavior",
 								"component": [
-									{
-										"key": "Tween",
-										"state": [
-											[
-												"enabled",
-												true
-											]
-										]
-									},
 									{
 										"key": "Button",
 										"state": [
@@ -1971,25 +1957,7 @@
 							},
 							{
 								"id": "effect",
-								"component": [
-									{
-										"key": "AdjustHSL",
-										"state": [
-											[
-												"hue",
-												true
-											],
-											[
-												"saturation",
-												true
-											],
-											[
-												"luminosity",
-												true
-											]
-										]
-									}
-								]
+								"component": []
 							},
 							{
 								"id": "world-instance",

@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "MODAL_LAYER_NAME",
 			"type": "string",
-			"initialValue": "\"Modal\"",
+			"initialValue": "Modal",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -400,7 +400,7 @@
 					"eventType": "variable",
 					"name": "DIRECTION_TOP",
 					"type": "string",
-					"initialValue": "\"Top\"",
+					"initialValue": "Top",
 					"comment": "",
 					"isStatic": false,
 					"isConstant": false,
@@ -410,7 +410,7 @@
 					"eventType": "variable",
 					"name": "DIRECTION_BOTTOM",
 					"type": "string",
-					"initialValue": "\"Bottom\"",
+					"initialValue": "Bottom",
 					"comment": "",
 					"isStatic": false,
 					"isConstant": false,
@@ -420,7 +420,7 @@
 					"eventType": "variable",
 					"name": "DIRECTION_LEFT",
 					"type": "string",
-					"initialValue": "\"Left\"",
+					"initialValue": "Left",
 					"comment": "",
 					"isStatic": false,
 					"isConstant": false,
@@ -430,7 +430,7 @@
 					"eventType": "variable",
 					"name": "DIRECTION_RIGHT",
 					"type": "string",
-					"initialValue": "\"Right\"",
+					"initialValue": "Right",
 					"comment": "",
 					"isStatic": false,
 					"isConstant": false,
@@ -473,88 +473,13 @@
 								"parallax-x": "0",
 								"parallax-y": "0"
 							}
+						},
+						{
+							"type": "script",
+							"script": "initializeModals(runtime)"
 						}
 					],
-					"sid": 680121253290634,
-					"children": [
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "for-each",
-									"objectClass": "System",
-									"sid": 244779599242515,
-									"parameters": {
-										"object": "ModalBehavior"
-									}
-								}
-							],
-							"actions": [],
-							"sid": 470683054754672,
-							"children": [
-								{
-									"eventType": "variable",
-									"name": "posY",
-									"type": "number",
-									"initialValue": "0",
-									"comment": "",
-									"isStatic": false,
-									"isConstant": false,
-									"sid": 823834909208533
-								},
-								{
-									"eventType": "variable",
-									"name": "posX",
-									"type": "number",
-									"initialValue": "0",
-									"comment": "",
-									"isStatic": false,
-									"isConstant": false,
-									"sid": 901904616333009
-								},
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "compare-instance-variable",
-											"objectClass": "ModalBehavior",
-											"sid": 785067316358115,
-											"parameters": {
-												"instance-variable": "position",
-												"comparison": 0,
-												"value": "DIRECTION_TOP"
-											}
-										}
-									],
-									"actions": [
-										{
-											"type": "script",
-											"script": "localVars.posX = runtime.viewportWidth(runtime.globalVars.MODAL_LAYER_NAME) / 2\nconst offset = runtime.objects.ModalBehavior.getFirstPickedInstance().height * 2\nlocalVars.posY= (runtime.viewportHeight(runtime.globalVars.MODAL_LAYER_NAME) / 2) - offset"
-										},
-										{
-											"id": "set-instvar-value",
-											"objectClass": "ModalBehavior",
-											"sid": 541964658239666,
-											"parameters": {
-												"instance-variable": "position",
-												"value": "posX & \",\" & posY"
-											}
-										},
-										{
-											"id": "set-instvar-value",
-											"objectClass": "ModalBehavior",
-											"sid": 484733622333708,
-											"parameters": {
-												"instance-variable": "endPosition",
-												"value": "ViewportWidth(MODAL_LAYER_NAME) / 2 & \",\" & ViewportHeight(MODAL_LAYER_NAME) / 2"
-											}
-										}
-									],
-									"sid": 407716417397069
-								}
-							]
-						}
-					]
+					"sid": 680121253290634
 				}
 			],
 			"sid": 260706392558052

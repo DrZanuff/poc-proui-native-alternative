@@ -23,6 +23,13 @@
 			"desc": "Vector2D",
 			"show": false,
 			"sid": 650144307456364
+		},
+		{
+			"name": "isOpen",
+			"type": "boolean",
+			"desc": "",
+			"show": false,
+			"sid": 883027069446894
 		}
 	],
 	"behaviorTypes": [

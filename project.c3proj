@@ -224,7 +224,43 @@
 					}
 				}
 			],
-			"subfolders": []
+			"subfolders": [
+				{
+					"items": [],
+					"subfolders": [
+						{
+							"items": [
+								{
+									"name": "initializeModals.js",
+									"type": "application/javascript",
+									"sid": 422807329290516,
+									"script-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "initializeModals"
+						},
+						{
+							"items": [
+								{
+									"name": "setIsModalOpen.js",
+									"type": "application/javascript",
+									"sid": 856848690110969,
+									"script-info": {
+										"purpose": "none"
+									}
+								}
+							],
+							"subfolders": [],
+							"name": "setIsModalOpen"
+						}
+					],
+					"name": "core"
+				}
+			],
+			"autoReloadOnPreview": true
 		},
 		"sound": {
 			"items": [],

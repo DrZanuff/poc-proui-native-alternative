@@ -22,6 +22,28 @@
 				}
 			],
 			"sid": 906813394060262
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 210304979834036,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ButtonNative"
+					}
+				}
+			],
+			"actions": [
+				{
+					"type": "script",
+					"script": "setIsModalOpen(runtime, true)"
+				}
+			],
+			"sid": 766853685618129
 		}
 	],
 	"sid": 310756895193816

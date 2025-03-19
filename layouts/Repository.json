@@ -808,9 +808,10 @@
 					"sid": 634558359774571,
 					"tags": "",
 					"instanceVariables": {
-						"slideDirection": "\"Top\"",
+						"slideDirection": "Top",
 						"position": "0,0",
-						"endPosition": "0,0"
+						"endPosition": "0,0",
+						"isOpen": false
 					},
 					"behaviors": {
 						"Tween": {
@@ -889,6 +890,10 @@
 											},
 											{
 												"iv": "endPosition",
+												"state": true
+											},
+											{
+												"iv": "isOpen",
 												"state": true
 											}
 										]

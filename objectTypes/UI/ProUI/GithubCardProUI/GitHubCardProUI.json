@@ -1,0 +1,29 @@
+{
+	"name": "GitHubCardProUI",
+	"plugin-id": "NinePatch",
+	"sid": 899686253447450,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "aekiro_gameobject",
+			"name": "GameObject",
+			"sid": 486507269077503
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 32,
+		"height": 32,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"fileType": "image/png",
+		"imageSpriteId": 1516876,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

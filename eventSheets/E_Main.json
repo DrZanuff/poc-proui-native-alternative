@@ -31,6 +31,23 @@
 				{
 					"type": "script",
 					"script": "async function preparePage() {\n  const repos = await fetchGitHubRepos('DrZanuff', 6)\n  generateGrid({\n    grid: runtime.objects.GridBehavior.getFirstPickedInstance(),\n    callback: () => generateGithubCards(runtime,repos),\n    totalElements: 4,\n  })\n}\n\npreparePage()"
+				},
+				{
+					"id": "request-url",
+					"objectClass": "AJAX",
+					"sid": 839571886010349,
+					"parameters": {
+						"tag": "\"github\"",
+						"url": "\"https://api.github.com/users/DrZanuff/repos\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "GridPRoUI",
+					"sid": 790658209311963,
+					"parameters": {
+						"visibility": "invisible"
+					}
 				}
 			],
 			"sid": 906813394060262
@@ -107,6 +124,101 @@
 				}
 			],
 			"sid": 749971216550981
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-completed",
+					"objectClass": "AJAX",
+					"sid": 822587691728444,
+					"parameters": {
+						"tag": "\"github\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "setdatabyjsonstring0",
+					"objectClass": "GridPRoUI",
+					"sid": 610923667832052,
+					"behaviorType": "GridView",
+					"parameters": {
+						"data0": "AJAX.LastData",
+						"root": "\"\""
+					}
+				}
+			],
+			"sid": 372285881913367
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "onGridViewRender",
+					"objectClass": "TextRepoNameProUI",
+					"sid": 790769509018715,
+					"behaviorType": "GridViewDataBind"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TextRepoNameProUI",
+					"sid": 502098891029890,
+					"parameters": {
+						"text": "Self.GridViewDataBind.get(\"name\")"
+					}
+				}
+			],
+			"sid": 788959863501704
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "onGridViewRender",
+					"objectClass": "TextLanguageProUI",
+					"sid": 777472602936113,
+					"behaviorType": "GridViewDataBind"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "TextLanguageProUI",
+					"sid": 912486117763255,
+					"parameters": {
+						"text": "Self.GridViewDataBind.get(\"language\")"
+					}
+				}
+			],
+			"sid": 829034453494363
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "onGridViewRender",
+					"objectClass": "HTMLElementURLProUI",
+					"sid": 544875508865550,
+					"behaviorType": "GridViewDataBind"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-content",
+					"objectClass": "HTMLElementURLProUI",
+					"sid": 334716378953138,
+					"parameters": {
+						"content-type": "html",
+						"string": "\"<a href=' \"& Self.GridViewDataBind.get(\"html_url\")  &\" ' class='limited-text' target='_blank' rel='noopener noreferrer'>  LINK </a>\"",
+						"selector": "\"\"",
+						"type": "one"
+					}
+				}
+			],
+			"sid": 359854187441601
 		}
 	],
 	"sid": 310756895193816

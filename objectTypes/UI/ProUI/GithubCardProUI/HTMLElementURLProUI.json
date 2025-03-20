@@ -1,0 +1,20 @@
+{
+	"name": "HTMLElementURLProUI",
+	"plugin-id": "HTMLElement",
+	"sid": 522199968670699,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "aekiro_gameobject",
+			"name": "GameObject",
+			"sid": 538155451547537
+		},
+		{
+			"behaviorId": "aekiro_gridviewbind",
+			"name": "GridViewDataBind",
+			"sid": 245005250618954
+		}
+	]
+}

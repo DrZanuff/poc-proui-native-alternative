@@ -16,7 +16,6 @@ export function generateGithubCards(runtime, githubData) {
           </a>
         `;
             }
-            console.log(element.objectType.name);
             if (element.objectType.name === 'TextRepoNameNative') {
                 ;
                 element.text = data.name;

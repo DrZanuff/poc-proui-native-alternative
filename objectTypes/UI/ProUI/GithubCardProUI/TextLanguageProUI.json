@@ -1,0 +1,21 @@
+{
+	"name": "TextLanguageProUI",
+	"plugin-id": "Text",
+	"sid": 554887875258254,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "aekiro_gameobject",
+			"name": "GameObject",
+			"sid": 960475370131980
+		},
+		{
+			"behaviorId": "aekiro_gridviewbind",
+			"name": "GridViewDataBind",
+			"sid": 735482018148640
+		}
+	],
+	"effectTypes": []
+}

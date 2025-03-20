@@ -28,8 +28,6 @@ export function generateGithubCards(
         `
       }
 
-      console.log(element.objectType.name)
-
       if (element.objectType.name === 'TextRepoNameNative') {
         ;(element as InstanceType.TextRepoNameNative).text = data.name
       }

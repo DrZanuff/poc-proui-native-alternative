@@ -244,7 +244,7 @@
 							"locked": false,
 							"world": {
 								"x": 32,
-								"y": 96,
+								"y": 64,
 								"width": 416,
 								"height": 256,
 								"originX": 0,
@@ -396,9 +396,9 @@
 									"locked": false,
 									"world": {
 										"x": 224,
-										"y": 338,
+										"y": 270,
 										"width": 256,
-										"height": 472,
+										"height": 864,
 										"originX": 0.5,
 										"originY": 0.5,
 										"color": [
@@ -464,7 +464,7 @@
 									"locked": false,
 									"world": {
 										"x": 320,
-										"y": 576,
+										"y": 512,
 										"width": 40,
 										"height": 36,
 										"originX": 0.5,
@@ -549,9 +549,9 @@
 									"locked": false,
 									"world": {
 										"x": 64,
-										"y": 105.67857142857144,
+										"y": 72.26173501926283,
 										"width": 288,
-										"height": 239.32142857142856,
+										"height": 238.68591049302367,
 										"originX": 0,
 										"originY": 0,
 										"color": [
@@ -694,7 +694,7 @@
 							"locked": false,
 							"world": {
 								"x": 576,
-								"y": 96,
+								"y": 64,
 								"width": 320,
 								"height": 256,
 								"originX": 0,
@@ -747,7 +747,7 @@
 						{
 							"type": "TextScrollProUI",
 							"properties": {
-								"text": "Currently, the ProUI ScrollView plugin is not compatible with the latest Construct 3 version (r424). However, we can achieve a similar effect using native features like Layers and Blend Modes.",
+								"text": "Atualmente, o plugin ProUI ScrollView não é compatível com a versão mais recente do Construct 3 (r424). No entanto, como podemos ver ao lado, é possível obter um efeito semelhante usando recursos nativos, como Camadas e Modos de Mesclagem.",
 								"enable-bbcode": true,
 								"font": "Arial",
 								"size": 12,
@@ -813,7 +813,7 @@
 							"locked": false,
 							"world": {
 								"x": 736,
-								"y": 224,
+								"y": 192,
 								"width": 256,
 								"height": 256,
 								"originX": 0.5,
@@ -897,7 +897,7 @@
 				{
 					"type": "GridObjectNative",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"origin": "top-left",
 						"wrap-horizontal": "repeat",
 						"wrap-vertical": "repeat",
@@ -917,9 +917,9 @@
 					"sid": 980222755546315,
 					"tags": "",
 					"instanceVariables": {
-						"columns": 1,
-						"horizontalSpacing": 0,
-						"verticalSpacing": 0
+						"columns": 2,
+						"horizontalSpacing": 10,
+						"verticalSpacing": 10
 					},
 					"behaviors": {},
 					"instanceFolderItem": {
@@ -932,9 +932,9 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 32,
-						"y": 384,
-						"width": 416,
+						"x": 64,
+						"y": 416,
+						"width": 352,
 						"height": 192,
 						"originX": 0,
 						"originY": 0,
@@ -2628,6 +2628,77 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Text",
+					"properties": {
+						"text": "Os cards abaixo são buscados na API do GitHub usando JavaScript/TypeScript. Em seguida, utilizamos JavaScript/TypeScript para posicionar os elementos em uma grade, replicando o comportamento de Grid e Grid Items do ProUI.",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 10,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"text-direction": "ltr",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 45,
+					"sid": 502469473638444,
+					"tags": "",
+					"instanceVariables": {},
+					"behaviors": {},
+					"effects": {
+						"Outline": {
+							"isEnabled": true,
+							"parameters": {
+								"width": 2,
+								"cl": [
+									1,
+									1,
+									1,
+									1
+								],
+								"diag": 0.7071
+							}
+						}
+					},
+					"instanceFolderItem": {
+						"sid": 502469473638444,
+						"expanded": true,
+						"folderName": "",
+						"indexInFolder": -1,
+						"folderNestingLevel": -1
+					},
+					"showing": true,
+					"locked": false,
+					"world": {
+						"x": 64,
+						"y": 320,
+						"width": 352,
+						"height": 96,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 862954527465762,
@@ -2720,7 +2791,7 @@
 					"locked": false,
 					"world": {
 						"x": 128,
-						"y": 32,
+						"y": 0,
 						"width": 224,
 						"height": 64,
 						"originX": 0,
@@ -2791,7 +2862,7 @@
 					"locked": false,
 					"world": {
 						"x": 608,
-						"y": 32,
+						"y": 0,
 						"width": 224,
 						"height": 64,
 						"originX": 0,
@@ -3920,6 +3991,20 @@
 			},
 			{
 				"sid": 404457220507599,
+				"expanded": true,
+				"folderName": "",
+				"indexInFolder": -1,
+				"folderNestingLevel": -1
+			},
+			{
+				"sid": 980222755546315,
+				"expanded": true,
+				"folderName": "",
+				"indexInFolder": -1,
+				"folderNestingLevel": -1
+			},
+			{
+				"sid": 502469473638444,
 				"expanded": true,
 				"folderName": "",
 				"indexInFolder": -1,

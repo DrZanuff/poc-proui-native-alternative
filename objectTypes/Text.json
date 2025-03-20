@@ -1,0 +1,15 @@
+{
+	"name": "Text",
+	"plugin-id": "Text",
+	"sid": 243812630089325,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [
+		{
+			"effectId": "outline",
+			"name": "Outline"
+		}
+	]
+}
